@@ -23,12 +23,6 @@ This project automatically retrieves and parses the IANA Root Zone Database webp
       // More entries...
   }
 
-Below is an example project description and README file you can include in your repository. You can adjust the content as needed.
-
----
-
-**README.md**
-
 ```markdown
 # Root Zone Database Updater
 
