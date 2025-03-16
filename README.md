@@ -68,7 +68,7 @@ This project automatically retrieves and parses the IANA Root Zone Database webp
 .
 ├── .github
 │   └── workflows
-│       └── update_tld.yml       # GitHub Actions workflow file
+│       └── update_content.yml   # GitHub Actions workflow file
 ├── scripts
 │   └── update_content.py        # Python script to fetch, parse, and update the JSON file
 ├── requirements.txt             # Python dependencies
