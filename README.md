@@ -27,8 +27,7 @@ This project automatically retrieves and parses the IANA Root Zone Database webp
 - **GitHub Actions Integration:**  
   The project includes a GitHub Actions workflow that:
   - Runs on every push to the `main` (or `master`) branch.
-  - Is scheduled to run periodically (every hour in the provided example).
-  - (Optionally) Sends notifications via Slack if the workflow fails.
+  - Is scheduled to run every day at midnight.
 
 ## File Structure
 
@@ -91,55 +90,45 @@ The project includes a GitHub Actions workflow defined in `.github/workflows/upd
   2. **Set Up Python:** Installs the desired Python version.
   3. **Install Dependencies:** Installs required libraries using `requirements.txt`.
   4. **Run Update Script:** Executes `scripts/update_content.py` to update the TLD data.
-  5. **Optional Notification:** If configured, sends notifications (e.g., via Slack) when the workflow fails.
 
 ### Example Workflow Snippet
 
 ```yaml
-name: Update TLD Data
+name: Update Root Zone Database
 
 on:
-  push:
-    branches: [ main ]
   schedule:
-    - cron: '0 * * * *'  # Adjust the schedule as needed
+    - cron: '0 0 * * *'  # Runs once a day; adjust as needed
+  workflow_dispatch:     # Allows manual triggering
 
 jobs:
-  update-tld:
+  update-content:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
 
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4
 
-      - name: Run TLD Update Script
-        run: python scripts/update_content.py
+    - name: Run Root Zone Database update script
+      run: python scripts/update_content.py
 
-  # Optional: Notify on failure using Slack
-  notify-on-failure:
-    needs: update-tld
-    if: failure()
-    runs-on: ubuntu-latest
-    steps:
-      - name: Send Slack notification on failure
-        uses: slackapi/slack-github-action@v1.23.0
-        with:
-          payload: |
-            {
-              "text": "The TLD update workflow for repository `${{ github.repository }}` has failed. Please check the logs."
-            }
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .
+        git diff --cached --quiet || (git commit -m "Update content via GitHub Action" && git push)
+
 ```
 
 ## Authentication Note
