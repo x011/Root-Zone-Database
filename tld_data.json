@@ -1587,6 +1587,10 @@
         "tld type": "generic",
         "tld manager": "Merck KGaA"
     },
+    ".emerson": {
+        "tld type": "generic",
+        "tld manager": "Not assigned"
+    },
     ".energy": {
         "tld type": "generic",
         "tld manager": "Binky Moon, LLC"
