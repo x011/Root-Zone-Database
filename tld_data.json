@@ -1457,7 +1457,7 @@
     },
     ".do": {
         "tld type": "country-code",
-        "tld manager": "Pontificia Universidad Catolica Madre y Maestra Recinto Santo Tomas de Aquino"
+        "tld manager": "Pontificia Universidad Catolica Madre y Maestra, Recinto Santo Tomas de Aquino"
     },
     ".docs": {
         "tld type": "generic",
@@ -5089,7 +5089,7 @@
     },
     ".to": {
         "tld type": "country-code",
-        "tld manager": "Government of the Kingdom of Tonga H.R.H. Crown Prince Tupouto'a c/o Consulate of Tonga"
+        "tld manager": "Government of the Kingdom of Tonga, H.R.H. Crown Prince Tupouto'a, c/o Consulate of Tonga"
     },
     ".today": {
         "tld type": "generic",
