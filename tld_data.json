@@ -1225,7 +1225,7 @@
     },
     ".cr": {
         "tld type": "country-code",
-        "tld manager": "National Academy of Sciences Academia Nacional de Ciencias"
+        "tld manager": "National Academy of Sciences (Academia Nacional de Ciencias)"
     },
     ".credit": {
         "tld type": "generic",
@@ -1573,7 +1573,7 @@
     },
     ".eg": {
         "tld type": "country-code",
-        "tld manager": "Egyptian Universities Network (EUN) Supreme Council of Universities"
+        "tld manager": "Egyptian Universities Network (EUN), Supreme Council of Universities"
     },
     ".eh": {
         "tld type": "country-code",
@@ -2469,7 +2469,7 @@
     },
     ".ie": {
         "tld type": "country-code",
-        "tld manager": "University College Dublin Computing Services Computer Centre"
+        "tld manager": "University College Dublin, Computing Services, Computer Centre"
     },
     ".ieee": {
         "tld type": "generic",
@@ -3141,7 +3141,7 @@
     },
     ".lv": {
         "tld type": "country-code",
-        "tld manager": "University of Latvia Institute of Mathematics and Computer Science Department of Network Solutions (DNS)"
+        "tld manager": "University of Latvia, Institute of Mathematics and Computer Science, Department of Network Solutions (DNS)"
     },
     ".ly": {
         "tld type": "country-code",
@@ -3901,7 +3901,7 @@
     },
     ".pg": {
         "tld type": "country-code",
-        "tld manager": "PNG DNS Administration Vice Chancellors Office The Papua New Guinea University of Technology"
+        "tld manager": "PNG DNS Administration, Vice Chancellors Office, The Papua New Guinea University of Technology"
     },
     ".ph": {
         "tld type": "country-code",
@@ -4105,7 +4105,7 @@
     },
     ".ps": {
         "tld type": "country-code",
-        "tld manager": "Ministry Of Telecommunications & Information Technology, Government Computer Center."
+        "tld manager": "Ministry of Telecommunications & Information Technology, Government Computer Center"
     },
     ".pt": {
         "tld type": "country-code",
@@ -5181,7 +5181,7 @@
     },
     ".tt": {
         "tld type": "country-code",
-        "tld manager": "University of the West Indies Faculty of Engineering"
+        "tld manager": "University of the West Indies, Faculty of Engineering"
     },
     ".tube": {
         "tld type": "generic",
