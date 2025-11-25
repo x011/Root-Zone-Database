@@ -5625,7 +5625,7 @@
     },
     ".在线": {
         "tld type": "generic",
-        "tld manager": "Beijing Tld Registry Technology Limited"
+        "tld manager": "Beijing TLD Registry Technology Limited"
     },
     ".한국": {
         "tld type": "country-code",
@@ -5666,6 +5666,10 @@
     "‏.موقع‎": {
         "tld type": "generic",
         "tld manager": "Helium TLDs Ltd"
+    },
+    ".一号店": {
+        "tld type": "generic",
+        "tld manager": "Not assigned"
     },
     ".বাংলা": {
         "tld type": "country-code",
@@ -5833,7 +5837,7 @@
     },
     ".中文网": {
         "tld type": "generic",
-        "tld manager": "TLD REGISTRY LIMITED"
+        "tld manager": "Beijing TLD Registry Technology Limited"
     },
     ".中信": {
         "tld type": "generic",
