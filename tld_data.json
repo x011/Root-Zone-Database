@@ -1657,7 +1657,7 @@
     },
     ".eu": {
         "tld type": "country-code",
-        "tld manager": "EURid vzw/asbl"
+        "tld manager": "EURid vzw"
     },
     ".eurovision": {
         "tld type": "generic",
