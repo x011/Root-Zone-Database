@@ -5461,11 +5461,11 @@
     },
     ".weather": {
         "tld type": "generic",
-        "tld manager": "International Business Machines Corporation"
+        "tld manager": "The Weather Company, LLC"
     },
     ".weatherchannel": {
         "tld type": "generic",
-        "tld manager": "International Business Machines Corporation"
+        "tld manager": "The Weather Company, LLC"
     },
     ".webcam": {
         "tld type": "generic",
