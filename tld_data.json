@@ -3279,6 +3279,10 @@
         "tld type": "generic",
         "tld manager": "Not assigned"
     },
+    ".merck": {
+        "tld type": "generic",
+        "tld manager": "Merck Registry Holdings, Inc."
+    },
     ".merckmsd": {
         "tld type": "generic",
         "tld manager": "MSD Registry Holdings, Inc."
