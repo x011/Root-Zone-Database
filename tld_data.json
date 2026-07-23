@@ -5471,6 +5471,10 @@
         "tld type": "generic",
         "tld manager": "The Weather Company, LLC"
     },
+    ".web": {
+        "tld type": "generic",
+        "tld manager": "VeriSign, Inc."
+    },
     ".webcam": {
         "tld type": "generic",
         "tld manager": "dot Webcam Limited"
