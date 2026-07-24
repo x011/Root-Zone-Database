@@ -2469,7 +2469,7 @@
     },
     ".ie": {
         "tld type": "country-code",
-        "tld manager": "University College Dublin, Computing Services, Computer Centre"
+        "tld manager": "IE Domain Registry CLG"
     },
     ".ieee": {
         "tld type": "generic",
